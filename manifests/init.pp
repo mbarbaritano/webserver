@@ -3,6 +3,7 @@ class webserver {
 
 file    { "c:\\Inetpub\\website":
 ensure => directory,
+ require => Iis_feature['Web-WebServer'],
 }
 
 file { "index":
