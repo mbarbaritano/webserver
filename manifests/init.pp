@@ -11,7 +11,7 @@ path   => "c:\\Inetpub\\website\\index.html",
 source => 'puppet:///modules/webserver/index.html',
 }
 
-iis_features = ['Web-WebServer','Web-Scripting-Tools']
+$iis_features = ['Web-WebServer','Web-Scripting-Tools']
 
 iis_feature { $iis_features:
   ensure => 'present',
